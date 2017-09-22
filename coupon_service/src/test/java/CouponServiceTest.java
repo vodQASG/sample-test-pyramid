@@ -52,7 +52,7 @@ public class CouponServiceTest {
 
         HttpResponse httpResponse = testServer.execute(get);
 
-        assertEquals(200, httpResponse.code());
+        assertEquals(404, httpResponse.code());
         assertEquals("{\"id\":\"ABCXYZ\"}", new String(httpResponse.body()));
     }
 
